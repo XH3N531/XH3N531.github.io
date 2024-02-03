@@ -1,0 +1,54 @@
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;title&amp;gt;nyx.&amp;lt;/title&amp;gt;
+
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+flag=1
+function f1()
+{
+    var Name = prompt(&amp;quot;what should I call you?&amp;quot;);
+    
+    if(Name == &amp;quot;&amp;quot; || Name == null) {
+    alert(&amp;quot;please enter your name.&amp;quot;);
+    } else {
+    alert(&amp;quot;Hi &amp;quot; + Name + &amp;quot;, always remember that I adore you.&amp;quot;); 
+    }
+}
+function f()
+{
+    if(flag==1)
+        {
+            Bn.style.top=400
+            Bn.style.left=300
+            flag=2
+        }
+    else if(flag==2)
+        {
+            Bn.style.top=400
+            Bn.style.left=50
+            flag=3
+        }
+    else if(flag==3)
+        {
+            Bn.style.top=370
+            Bn.style.left=166
+            flag=1
+        }
+}
+&amp;lt;/script&amp;gt;
+
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;h1&amp;gt; Hey! you look handsome!&amp;lt;/h1&amp;gt;
+&amp;lt;img src=&amp;quot;https://c.tenor.com/sZPWbZj_QI8AAAAi/kakaotalk-emoticon.gif&amp;quot; height=&amp;quot;200&amp;quot; /&amp;gt;
+&amp;lt;h1 style=&amp;quot;#&amp;quot;&amp;gt;don&amp;#39;t you think?&amp;lt;/h1&amp;gt;
+&amp;lt;div id=&amp;quot;By&amp;quot; style=&amp;quot;position:absolute; left:64px; top:370px; width:210px;
+height:210px;&amp;quot;&amp;gt;
+&amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot; YES &amp;quot; onClick=&amp;quot;f1()&amp;quot; /&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div ID=&amp;quot;Bn&amp;quot; style=&amp;quot;position:absolute; left:166px; top:370px; width:210px; height:210px;&amp;quot;&amp;gt;
+&amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot; NO &amp;quot; onMouseOver=&amp;quot;f()&amp;quot; /&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
